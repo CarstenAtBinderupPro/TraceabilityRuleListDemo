@@ -1,0 +1,181 @@
+[   
+    {"ruleName": "Req_Fea_L3", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Requirement", "linkType": "Parent", "workItemType": "Feature"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Feature", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L3", "linkType": "Parent", "workItemType": "Process L2"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L2", "linkType": "Parent", "workItemType": "Process L1"}
+        ]},
+    {"ruleName": "Process2requirement", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Process L1", "linkType": "Child", "workItemType": "Process L2"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L2", "linkType": "Child", "workItemType": "Process L3"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "Feature"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "Requirement"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "FDD"}
+        ]},    
+    
+	
+	{"ruleName": "L3-Feature-Requirement-FDD-Test Case", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "Feature"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "Requirement"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "FDD"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "FDD", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},    
+    {"ruleName": "L3-L4-Requirement-FDD-Test Case", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Process L3", "linkType": "Child", "workItemType": "Process L4"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L4", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "FDD"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "FDD", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},    
+    {"ruleName": "L3-Feature-Feature-L3", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "Feature"},	
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Feature", "linkType": "Related", "workItemType": "Feature"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Feature", "linkType": "Related", "workItemType": "Process L3"}
+        ]},    
+    {"ruleName": "L3-L4-Requirement-Requirement-L3-L4", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Process L3", "linkType": "Child", "workItemType": "Process L4"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L4", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "Requirement"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "Process L4"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Process L4", "linkType": "Parent", "workItemType": "Process L3"}
+        ]},    
+    {"ruleName": "FDD-Requirement- L3", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "FDD", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "Process L3"}
+        ]},    
+    {"ruleName": "FDD-Requirement-L4- L3", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "FDD", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "Process L4"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L4", "linkType": "Parent", "workItemType": "Process L3"}
+        ]},    
+    {"ruleName": "FDD-Requirement-L4- L3-E2E Step-E2E Process", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "FDD", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "Process L4"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L4", "linkType": "Parent", "workItemType": "Process L3"},
+		{"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "E2E Step"},
+		{"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "E2E Step", "linkType": "Parent", "workItemType": "E2E Process"}
+        ]},    
+    {"ruleName": "FDD-Requirement-Feature-L3-E2E Step-E2E Process", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "FDD", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Requirement", "linkType": "Parent", "workItemType": "Feature"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Feature", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "E2E Step"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "E2E Step", "linkType": "Parent", "workItemType": "E2E Process"}
+        ]},    
+    {"ruleName": "FDD-Requirement-Feature-E2E Scenario-E2E Process", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "FDD", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Requirement", "linkType": "Parent", "workItemType": "Feature"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Feature", "linkType": "Related", "workItemType": "E2E Scenario"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "E2E Scenario", "linkType": "Parent", "workItemType": "E2E Process"}
+        ]},    
+    {"ruleName": "E2E Process-E2E Scenario-Feature-Requirement-FDD-Test Case", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Scenario"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Scenario", "linkType": "Related", "workItemType": "Feature"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "Requirement"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "FDD"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "FDD", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},
+    {"ruleName": "E2E Process-E2E Step-L3-L4-Requirement-FDD-Test Case", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Step"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Step", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Child", "workItemType": "Process L4"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L4", "linkType": "Related", "workItemType": "Requirement"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "FDD"},
+        {"ruleNum": 60, "traceLevel": 6, "fromWorkItemType": "FDD", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},
+		
+		
+    {"ruleName": "FDD-Requirement-L3-E2E Scenario", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "FDD", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "Process L3"},
+		{"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "E2E Scenario"}
+        ]},    
+    {"ruleName": "FDD-Requirement-E2E Scenario", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "FDD", "linkType": "Related", "workItemType": "Requirement"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "E2E Scenario"}
+        ]},    		
+    {"ruleName": "Epic2L32FDD", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Epic", "linkType": "Child", "workItemType": "Process L1"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L1", "linkType": "Child", "workItemType": "Process L2"},	
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L2", "linkType": "Child", "workItemType": "Process L3"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "Feature"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "Requirement"},
+        {"ruleNum": 60, "traceLevel": 6, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "FDD"}
+        ]},
+	{"ruleName": "Step2Requirement", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Step"},	
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Step", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "Feature"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "Requirement"}
+        ]},
+    {"ruleName": "E2E_Scenario_down", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Scenario"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Scenario", "linkType": "Related", "workItemType": "Feature"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Feature", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L3", "linkType": "Child", "workItemType": "Process L4"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Process L4", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},
+    {"ruleName": "E2E_Scenario_step_down", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Scenario"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Scenario", "linkType": "Related", "workItemType": "E2E Step"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "E2E Step", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L3", "linkType": "Child", "workItemType": "Process L4"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Process L4", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},
+    {"ruleName": "E2E_Scenario_up", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Process L4", "linkType": "Parent", "workItemType": "Process L3"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "Feature"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Feature", "linkType": "Related", "workItemType": "E2E Scenario"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "E2E Scenario", "linkType": "Parent", "workItemType": "E2E Process"}
+        ]},
+    {"ruleName": "E2E_Scenario_step_up", "ruleOrganisation": ["_PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Process L4", "linkType": "Parent", "workItemType": "Process L3"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "E2E Step"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "PE2E Step", "linkType": "Related", "workItemType": "E2E Scenario"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "E2E Scenario", "linkType": "Parent", "workItemType": "E2E Process"}
+        ]},
+
+    {"ruleName": "E2E_1", "ruleOrganisation": ["xxPalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Step"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Step", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Child", "workItemType": "Process L4"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L4", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},
+    {"ruleName": "E2E_POC", "ruleOrganisation": ["xxPalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Step"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Step", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "Workshop"}
+        ]},
+    {"ruleName": "E2E_2", "ruleOrganisation": ["xxPalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Scenario"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Scenario", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Child", "workItemType": "Process L4"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L4", "linkType": "Tested By", "workItemType": "Test Case"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Test Case", "linkType": "Part Of", "workItemType": "Test Plan"}
+        ]},
+    {"ruleName": "Epic1", "ruleOrganisation": ["binderupprotest/Testproject"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Epic", "linkType": "Child", "workItemType": "Feature"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "User Story"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "User Story", "linkType": "Child", "workItemType": "Task"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Task", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},
+    {"ruleName": "Epic2", "ruleOrganisation": ["xxPalsgaardGlobalIT/D365FO", "BinderupProDev03/TestCaseProject"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Epic", "linkType": "Child", "workItemType": "Feature"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "Requirement"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Requirement", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},
+    {"ruleName": "Epic3", "ruleOrganisation": ["xxPalsgaardGlobalIT/D365FO", "binderupprotest/Testproject"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Epic", "linkType": "Child", "workItemType": "Feature"}
+        ]},
+    {"ruleName": "Workshop", "ruleOrganisation": ["xxPalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Epic", "linkType": "Child", "workItemType": "Workshop"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Workshop", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "E2E Step"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "E2E Step", "linkType": "Parent", "workItemType": "E2E Process"}
+        ]},
+    {"ruleName": "Epic4", "ruleOrganisation": ["BinderupProDev03/TestCaseProject"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Epic", "linkType": "Child", "workItemType": "Feature"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "Requirement"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Requirement", "linkType": "Tested By", "workItemType": "Test Case"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Test Case", "linkType": "Part Of", "workItemType": "Test Plan"}
+        ]}
+]
