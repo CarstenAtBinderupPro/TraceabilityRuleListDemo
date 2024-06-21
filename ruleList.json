@@ -26,5 +26,13 @@
         {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L4", "linkType": "Related", "workItemType": "Requirement"},
         {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "FDD"},
         {"ruleNum": 60, "traceLevel": 6, "fromWorkItemType": "FDD", "linkType": "Tested By", "workItemType": "Test Case"}
+        ]},
+    {"ruleName": "E2E Process-E2E Scenario-E2E Step-L3-L4-Test Case", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
+        {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "E2E Process", "linkType": "Child", "workItemType": "E2E Scenario"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "E2E Scenario", "linkType": "Related", "workItemType": "E2E Step"},
+        {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "E2E Step", "linkType": "Related", "workItemType": "Process L3"},
+        {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Process L3", "linkType": "Child", "workItemType": "Process L4"},
+        {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Process L4", "linkType": "Tested By", "workItemType": "Test Case"}
         ]}
+
 ]
