@@ -2,7 +2,7 @@
 	
      {"ruleName": "L1-L2-L3-Feature-Requirement-FDD-Test Case", "ruleOrganisation": ["PalsgaardGlobalIT/D365FO"], "rules": [
         {"ruleNum": 10, "traceLevel": 1, "fromWorkItemType": "Process L1", "linkType": "Child", "workItemType": "Process L2"},	
-        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Peocess L2", "linkType": "Child", "workItemType": "Process L3"},
+        {"ruleNum": 20, "traceLevel": 2, "fromWorkItemType": "Process L2", "linkType": "Child", "workItemType": "Process L3"},
         {"ruleNum": 30, "traceLevel": 3, "fromWorkItemType": "Process L3", "linkType": "Related", "workItemType": "Feature"},
         {"ruleNum": 40, "traceLevel": 4, "fromWorkItemType": "Feature", "linkType": "Child", "workItemType": "Requirement"},
         {"ruleNum": 50, "traceLevel": 5, "fromWorkItemType": "Requirement", "linkType": "Related", "workItemType": "FDD"},
