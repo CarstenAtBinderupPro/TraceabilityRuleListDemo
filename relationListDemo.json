@@ -1,8 +1,44 @@
 [
-  {"ADO": "https://dev.azure.com/AVK-Group/D365FSCM_SCIPPER_TEMPLATE", "D365FO": "https://d365-temp-test.sandbox.operations.eu.dynamics.com", "D365Name": "D365-temp-Test"},
-  {"ADO": "https://dev.azure.com/AVK-Group/D365FSCM_SCIPPER_TEMPLATE", "D365FO": "https://d365-temp-golden5c7537cf774d7e7aaos.cloudax.eu.dynamics.com", "D365Name": "D365-temp-Golden"},
-  {"ADO": "https://dev.azure.com/AVK-Group/D365FSCM_SCIPPER_TEMPLATE", "D365FO": "https://d365-avk-workshop.sandbox.operations.eu.dynamics.com", "D365Name": "D365-temp-Workshop"},
-  {"ADO": "https://dev.azure.com/PalsgaardGlobalIT/D365FO", "D365FO": "https://palsgaard-test12.sandbox.operations.eu.dynamics.com", "D365Name": "Test 12"},
-  {"ADO": "https://dev.azure.com/PalsgaardGlobalIT/D365FO", "D365FO": "https://palsgaard-migrationf6f5996c7dbbe792aos.axcloud.dynamics.com", "D365Name": "Migration"},
-  {"ADO": "https://dev.azure.com/PalsgaardGlobalIT/D365FO", "D365FO": "https://palsgaard-gold65aecc782bc8ea61aos.axcloud.dynamics.com", "D365Name": "Golden config"}
+  {
+    "ADO": "https://dev.azure.com/AVK-Group/D365FSCM_SCIPPER_TEMPLATE",
+    "D365FO": "https://d365-temp-test.sandbox.operations.eu.dynamics.com",
+    "D365Name": "D365-temp-Test",
+    "menuItemField": "Custom.Menuitemname"
+  },
+  {
+    "ADO": "https://dev.azure.com/AVK-Group/D365FSCM_SCIPPER_TEMPLATE",
+    "D365FO": "https://d365-temp-golden5c7537cf774d7e7aaos.cloudax.eu.dynamics.com",
+    "D365Name": "D365-temp-Golden",
+    "menuItemField": "Custom.Menuitemname"
+  },
+  {
+    "ADO": "https://dev.azure.com/AVK-Group/D365FSCM_SCIPPER_TEMPLATE",
+    "D365FO": "https://d365-avk-workshop.sandbox.operations.eu.dynamics.com",
+    "D365Name": "D365-temp-Workshop",
+    "menuItemField": "Custom.Menuitemname"
+  },
+  {
+    "ADO": "https://dev.azure.com/PalsgaardGlobalIT/D365FO",
+    "D365FO": "https://palsgaard-test116cdbe4c9065176fbaos.axcloud.dynamics.com",
+    "D365Name": "Test 11",
+    "menuItemField": "Custom.Menuitemname"
+  },
+  {
+    "ADO": "https://dev.azure.com/PalsgaardGlobalIT/D365FO",
+    "D365FO": "https://palsgaard-test12.sandbox.operations.eu.dynamics.com",
+    "D365Name": "Test 12",
+    "menuItemField": "Custom.Menuitemname"
+  },
+  {
+    "ADO": "https://dev.azure.com/PalsgaardGlobalIT/D365FO",
+    "D365FO": "https://palsgaard-migrationf6f5996c7dbbe792aos.axcloud.dynamics.com",
+    "D365Name": "Migration",
+    "menuItemField": "Custom.Menuitemname"
+  },
+  {
+    "ADO": "https://dev.azure.com/PalsgaardGlobalIT/D365FO",
+    "D365FO": "https://palsgaard-gold65aecc782bc8ea61aos.axcloud.dynamics.com",
+    "D365Name": "Golden config",
+    "menuItemField": "Custom.Menuitemname"
+  }
 ]
