@@ -1,0 +1,12 @@
+[
+  {
+    "ADO": "https://dev.azure.com/BinderupProDec25/MS_DEC25",
+    "menuItemField": "Custom.Menuitemname",
+    "defaultCompareState": null,
+    "D365FOLinks": [
+      {"D365FO_URL": "https://palsgaard-migrationf6f5996c7dbbe792aos.axcloud.dynamics.com", "D365Name": "PA Migration - MS ADO"},
+      {"D365FO_URL": "https://palsgaard-test12.sandbox.operations.eu.dynamics.com", "D365Name": "PA Test 12 - MS ADO"},
+      {"D365FO_URL": "https://palsgaard-uat.sandbox.operations.eu.dynamics.com", "D365Name": "PA UAT - MS ADO"}
+    ]
+  }
+]
