@@ -1,6 +1,6 @@
 [
     {
-      "ADO": "https://dev.azure.com/BinderupProDec25/MS_DEC25",
+      "ADO": "https://dev.azure.com/BinderupProTest/BDC%20test",
       "menuItemField": "Custom.Menuitemname",
       "defaultCompareState": null,
       "defaultAreaId": null,
@@ -31,4 +31,3 @@
       }
     }
   ]
-  
