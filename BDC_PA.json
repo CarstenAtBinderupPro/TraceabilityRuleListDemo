@@ -1,0 +1,35 @@
+
+[
+    {
+      "ADO": "https://dev.azure.com/BinderupProDec25/MS_DEC25",
+      "menuItemField": "Custom.Menuitemname",
+      "defaultCompareState": null,
+      "defaultAreaId": null,
+      "D365FOLinks": [
+        {
+          "D365FO_URL": "https://palsgaard-migrationf6f5996c7dbbe792aos.axcloud.dynamics.com",
+          "D365Name": "PA Migration - MS ADO (git)"
+        },
+        {
+          "D365FO_URL": "https://palsgaard-test12.sandbox.operations.eu.dynamics.com",
+          "D365Name": "PA Test 12 - MS ADO (git)"
+        },
+        {
+          "D365FO_URL": "https://palsgaard-uat.sandbox.operations.eu.dynamics.com",
+          "D365Name": "PA UAT - MS ADO (git)"
+        },
+        {
+          "D365FO_URL": "https://palsgaard-dev08fa04abe88318ceb4devaos.axcloud.dynamics.com/",
+          "D365Name": "PA Dev08 - MS ADO (from UI)"
+        }
+      ],
+      "FOMenuDetection":
+      {
+        "MenuRootId": "51040", 
+        "MenuTreeWIT": "MenuTree",
+        "MenuWIT": "MenuItem",
+        "MenuPathField": "Custom.MenuPath"
+      }
+    }
+  ]
+  
