@@ -28,6 +28,8 @@
         "MenuTreeWIT": "MenuTree",
         "MenuWIT": "MenuItem",
         "MenuPathField": "Custom.MenuPath"
-      }
+      },
+      "StateFilter_In": [],
+      "StateFilter_NotIn": ["Closed"]
     }
   ]
