@@ -24,7 +24,7 @@
       ],
       "FOMenuDetection":
       {
-        "MenuRootId": "51040", 
+        "MenuRootId": "517", 
         "MenuTreeWIT": "Menu",
         "MenuWIT": "Menu",
         "MenuPathField": "Custom.Fullmenu"
